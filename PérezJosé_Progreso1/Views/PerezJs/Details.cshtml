@@ -1,0 +1,48 @@
+﻿@model PérezJosé_Progreso1.Models.PerezJ
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>PerezJ</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AtributoInt)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AtributoInt)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AtributoDecimal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AtributoDecimal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AtributoString)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AtributoString)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AtributoBool)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AtributoBool)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fecha)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
