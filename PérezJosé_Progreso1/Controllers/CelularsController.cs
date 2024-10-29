@@ -26,7 +26,7 @@ namespace PérezJosé_Progreso1.Controllers
             return View(await pérezJosé_Progreso1Context.ToListAsync());
         }
 
-        // GET: Celulars/Details/5
+        
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
